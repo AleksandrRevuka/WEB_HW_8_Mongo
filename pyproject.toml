@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "web-hw-8-mongo"
+version = "0.1.0"
+description = ""
+authors = ["Revuka Oleksandr <a.revuka@gmail.com>"]
+readme = "README.md"
+packages = [{include = "web_hw_8_mongo"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

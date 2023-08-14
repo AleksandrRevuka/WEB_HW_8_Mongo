@@ -1,0 +1,5 @@
+/.pre-commit-config.yaml
+/.venv
+/README.md
+/tests
+/web_hw_8_mongo
