@@ -33,6 +33,11 @@ def get_quotes_by_tags(tags):
     return quotes
 
 
+def print_result(quotes):
+    for quote in quotes:
+        print(quote.content)
+
+
 def main():
     while True:
         input_data = input(">>> ").strip()
@@ -42,18 +47,15 @@ def main():
 
         if command == "name":
             quotes = get_quotes_by_author(argument)
-            for quote in quotes:
-                print(quote.content)
+            print_result(quotes)
 
         elif command == "tag":
             quotes = get_quotes_by_tag(argument)
-            for quote in quotes:
-                print(quote.content)
+            print_result(quotes)
 
         elif command == "tags":
             quotes = get_quotes_by_tags(argument)
-            for quote in quotes:
-                print(quote.content)
+            print_result(quotes)
 
         elif command == "exit":
             sys.exit()
