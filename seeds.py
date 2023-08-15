@@ -1,8 +1,9 @@
 import json
+import faker
 from datetime import datetime
 
 import connect
-from models import Author, Quote
+from models import Author, Quote, Contact
 
 
 def seeds_authors():
@@ -29,6 +30,13 @@ def seeds_quotes():
         Quote(content=quote["quote"], author=author, tags=quote["tags"]).save()
 
 
+def seeds_contact():
+    fake_data = faker.Faker()
+    for _ in range(5):
+        Contact(full_name=fake_data.name(), email=fake_data.email()).save()
+
+
 if __name__ == "__main__":
     seeds_authors()
     seeds_quotes()
+    seeds_contact()
