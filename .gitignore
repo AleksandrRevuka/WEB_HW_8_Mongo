@@ -4,3 +4,6 @@
 /tests
 /web_hw_8_mongo
 /config.ini
+/.ruff_cache
+/.mypy_cache
+/__pycache__
