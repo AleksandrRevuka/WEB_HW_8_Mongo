@@ -1,7 +1,4 @@
 import pika
-
-from datetime import datetime
-
 import json
 
 import connect
